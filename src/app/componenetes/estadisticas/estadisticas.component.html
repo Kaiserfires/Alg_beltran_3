@@ -1,0 +1,3 @@
+<div *ngFor="let usu of usuarios; let index= index; let odd = odd;let even = even;">
+<p [ngClass]="{'blue':odd,'green':even}">{{usu.apellido}} {{usu.nombre}}</p>
+</div>

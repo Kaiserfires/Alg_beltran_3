@@ -1,0 +1,16 @@
+<p>adivinar-numero works!</p>
+
+<div *ngIf="!play"> 
+por favor ingrese el numero del cual inicia y en el cual termine el aliatorio<br>
+<input type="number" [(ngModel)]="myjuego.min">
+<input type="number" [(ngModel)]="myjuego.max"><br>
+
+<input type="buttom" (click)="iniciar()" value="iniciar a jugar" ><br>
+usted gano {{this.victorias}} y perdio {{this.perdidas}}
+</div>
+<div *ngIf="play">
+    este es el valor minimo {{myjuego.min}} y este es el valor maximo {{myjuego.max}}<br>
+    cantidad de intentos {{myjuego.trys}}<br>
+    <input type="number" [(ngModel)]="myjuego.inp"><br>
+    <input type="buttom" (click)="ganarPerder()" value="nuevo intento">
+</div>
