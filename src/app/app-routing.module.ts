@@ -5,6 +5,7 @@ import { EstadisticasComponent } from './componenetes/estadisticas/estadisticas.
 import { BienvenidaComponent } from './vista/bienvenida/bienvenida.component';
 import { LoginComponent } from './vista/login/login.component';
 import { RegistrarComponent } from './vista/registrar/registrar.component';
+import { ListadoComponent } from './vista/listado/listado.component';
 
 const routes: Routes = [
   {path:'',component: BienvenidaComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'registrar',component:RegistrarComponent},
   {path:'estadisticas',component:EstadisticasComponent},
   {path:'adivinarnumero',component:AdivinarNumeroComponent},
+  {path:'listado',component:ListadoComponent},
   {path:'**',component:BienvenidaComponent}, //esto sirve para volver a una pagina con los doble **
 ];
 
