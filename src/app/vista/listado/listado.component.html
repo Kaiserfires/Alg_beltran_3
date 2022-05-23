@@ -1,7 +1,7 @@
 <p>listado works!</p>
 <input type="button" (click)="ver()" value="ver paises" >
 <app-bandera [bandera]="miBandera"></app-bandera>
-<div *ngFor="let pais of misBanderas|async">
+<div *ngFor="let pais of misBanderas|async"> 
     <li (click)="seleccionar(pais.flags.png)">
         {{pais.name.common}}
     </li>

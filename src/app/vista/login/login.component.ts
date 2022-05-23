@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { timeout } from 'rxjs';
 import { Usarios } from 'src/app/entidades/usarios';
 
 @Component({
@@ -12,6 +11,7 @@ export class LoginComponent implements OnInit {
   nombre:string="escriba aqui";
   contrasenia:string="";
   MyUsuario:Usarios;
+
     constructor(public route:Router) { 
     this.MyUsuario = new Usarios();
       
@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
         let ListUsuario:Array<Usarios>=JSON.parse(ListUsuarioSerial);
         if(ListUsuario.find((us)=>this.MyUsuario.usuario ==us.usuario && us.contrasenia == this.MyUsuario.contrasenia)){
           this.route.navigateByUrl("/bienvenida");
+          localStorage.setItem('usuarioLogueado',this.nombre);
         }
   }
 }

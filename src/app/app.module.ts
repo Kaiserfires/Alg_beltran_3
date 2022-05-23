@@ -13,6 +13,9 @@ import { AdivinarNumeroComponent } from './componenetes/adivinar-numero/adivinar
 import { ListadoComponent } from './vista/listado/listado.component';
 import { BanderaComponent } from './vista/bandera/bandera.component';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +25,8 @@ import { BanderaComponent } from './vista/bandera/bandera.component';
     EstadisticasComponent,
     AdivinarNumeroComponent,
     ListadoComponent,
-    BanderaComponent
-  ],
+    BanderaComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
