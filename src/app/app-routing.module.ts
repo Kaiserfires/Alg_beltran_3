@@ -7,7 +7,8 @@ import { LoginComponent } from './vista/login/login.component';
 import { RegistrarComponent } from './vista/registrar/registrar.component';
 import { ListadoComponent } from './vista/listado/listado.component';
 import { AccesoGuard } from './seguridad/acceso.guard';
-//import { AhorcadoComponent } from './componenetes/ahorcado/ahorcado.component';
+import { AhorcadoCompComponent } from './componenetes/ahorcado-comp/ahorcado-comp.component';
+//import { DibujaAhorcadoComponent } from './dibuja-ahorcado/dibuja-ahorcado.component';
 
 const routes: Routes = [
   {path:'',component: BienvenidaComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'estadisticas',component:EstadisticasComponent,canActivate:[AccesoGuard]},
   {path:'adivinarnumero',component:AdivinarNumeroComponent,canActivate:[AccesoGuard]},
   {path:'listado',component:ListadoComponent,canActivate:[AccesoGuard]},
+  {path:'Ahorcado',component:AhorcadoCompComponent},
   //{path:'Ahorcado',component:AhorcadoComponent},
   {path:'**',component:BienvenidaComponent}, //esto sirve para volver a una pagina con los doble **
 ];

@@ -1,6 +1,11 @@
-<input type="text" [(ngModel)]="MyUsuario.usuario">
-<input type="password" [(ngModel)]="MyUsuario.contrasenia">
-<input type="button" (click)="loguear()" value="envia los valores" >
-
+<form [formGroup]="formu"(ngSubmit)="loguear2()">
+<!-- <input type="text" [(ngModel)]="MyUsuario.usuario" [formControlName]="nombre"> -->
+<input type="text" formControlName="nombres">
+<!-- <input type="password" [(ngModel)]="MyUsuario.contrasenia" [formControlName]="pass"> -->
+<input type="password" formControlName="pass">
+<!-- <input type="button" (click)="loguear()" value="envia los valores" > -->
+<p *ngIf="formu.controls['nombres'].errors?formu.controls['nombres'].errors['required'] :false && formu.controls['nombres'].touched"></p>
+</form>
+<button type="submit" [disabled]="formu.invalid"  >login</button>
 
 {{nombre}}
