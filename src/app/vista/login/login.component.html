@@ -1,11 +1,18 @@
 <form [formGroup]="formu"(ngSubmit)="loguear2()">
 <!-- <input type="text" [(ngModel)]="MyUsuario.usuario" [formControlName]="nombre"> -->
-<input type="text" formControlName="nombres">
+<input type="text" formControlName="usuario">
 <!-- <input type="password" [(ngModel)]="MyUsuario.contrasenia" [formControlName]="pass"> -->
-<input type="password" formControlName="pass">
+<input type="password" formControlName="contrasenia">
 <!-- <input type="button" (click)="loguear()" value="envia los valores" > -->
-<p *ngIf="formu.controls['nombres'].errors?formu.controls['nombres'].errors['required'] :false && formu.controls['nombres'].touched"></p>
-</form>
+<p *ngIf="formu.controls['usuario'].errors?formu.controls['usuario'].errors['required'] :false && formu.controls['usuario'].touched">escriba</p>
+<p *ngIf="formu.controls['contrasenia'].errors && formu.controls['contrasenia'].touched && formu.controls['contrasenia'].errors['minLength']">error de codigo</p>
+
 <button type="submit" [disabled]="formu.invalid"  >login</button>
+</form>
+<!--<form {ngSubmit}="aceptar()">
+    <input type="text"/>
+    <p>    </p>
+    <button>aceptar</button>
+</form>-->
 
 {{nombre}}
