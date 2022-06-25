@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'estadisticas',component:EstadisticasComponent,canActivate:[AccesoGuard]},
   {path:'adivinarnumero',component:AdivinarNumeroComponent,canActivate:[AccesoGuard]},
   {path:'listado',component:ListadoComponent,canActivate:[AccesoGuard]},
-  {path:'Ahorcado',component:AhorcadoCompComponent},
+  {path:'Ahorcado',component:AhorcadoCompComponent,canActivate:[AccesoGuard]},
   //{path:'Ahorcado',component:AhorcadoComponent},
   {path:'**',component:BienvenidaComponent}, //esto sirve para volver a una pagina con los doble **
 ];

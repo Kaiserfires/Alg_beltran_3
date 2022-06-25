@@ -37,12 +37,14 @@ export class LoginComponent implements OnInit {
         // }
   }*/
   loguear2(){
-    this.UserFlag.MyUserFlag=this.formu.getRawValue();
+    //this.UserFlag.MyUserFlag=this.formu.getRawValue();
+    let usuario:Usarios=this.formu.getRawValue();
     let ListUsuarioSerial:string=localStorage.getItem('usuario')??'[]';
     let ListUsuario:Array<Usarios>=JSON.parse(ListUsuarioSerial);
-    if(ListUsuario.find((us)=>this.UserFlag.MyUserFlag.usuario ==us.usuario && us.contrasenia == this.UserFlag.MyUserFlag.contrasenia)){
-        this.route.navigateByUrl("/bienvenida");
-        localStorage.setItem('usuarioLogueado',this.nombre);
+    if(ListUsuario.find((us)=>usuario.usuario ==us.usuario && us.contrasenia == usuario.contrasenia)){
+      this.UserFlag.login(usuario);  
+      this.route.navigateByUrl("/bienvenida");
+        
       }
 
   }

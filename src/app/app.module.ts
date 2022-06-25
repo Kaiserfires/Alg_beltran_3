@@ -15,6 +15,8 @@ import { BanderaComponent } from './vista/bandera/bandera.component';
 import { AhorcadoCompComponent } from './componenetes/ahorcado-comp/ahorcado-comp.component';
 import { DibujaAhorcadoComponent } from './dibuja-ahorcado/dibuja-ahorcado.component';
 import { LoadingComponent } from './loading/loading.component';
+import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { LogOutComponent } from './log-out/log-out.component';
 
 
 
@@ -32,6 +34,8 @@ import { LoadingComponent } from './loading/loading.component';
     AhorcadoCompComponent,
     DibujaAhorcadoComponent,
     LoadingComponent,
+    SobreMiComponent,
+    LogOutComponent,
     ],
   imports: [
     BrowserModule,

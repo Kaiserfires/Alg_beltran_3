@@ -6,11 +6,13 @@
             <span *ngIf="!contiene(esp)">
                 _ &nbsp;
             </span>
-            <span *ngIf="!contiene(esp)">
-                _ &nbsp;
+            <span *ngIf="contiene(esp)">
+                {{esp}}
             </span>
         </span>
     </div>
 </div>
 <input type="text" max="1" (keyup)="validar()"[(ngModel)]="letra">
 {{miAhorcado.letrasElegidas}}
+<div>{{mensaje}}</div>
+<br>
