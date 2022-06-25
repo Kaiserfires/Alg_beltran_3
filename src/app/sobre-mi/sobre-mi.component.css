@@ -1,0 +1,58 @@
+.Titulo{
+    font-family: Impact;
+    font-size: 100px;
+    text-align: center;
+}
+.TituloNoticia{
+    font-family: Impact;
+    font-size: 20px;
+    text-align: center;
+}
+.marg{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.alinea{
+    margin: 0 auto;
+}
+
+.cent{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.tablaN{
+    border-width: 1px;
+    background-color: rgb(219, 219, 219);
+    border-style: solid;
+}
+.fondoInTabla{
+    background-color: white;
+    padding-right: 10px;
+}
+.comentario{
+    text-align: left;
+}
+.cent2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(202, 202, 202);
+}
+.Memb1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.anch{
+    width: 400px;
+}
+.justyf{
+    text-align: justify;
+}
+.wallpaper{
+    background-color: rgb(177, 92, 92);
+}
+.ColorL{
+    color: white;
+}
