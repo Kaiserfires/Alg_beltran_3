@@ -17,6 +17,7 @@ import { DibujaAhorcadoComponent } from './dibuja-ahorcado/dibuja-ahorcado.compo
 import { LoadingComponent } from './loading/loading.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { LogOutComponent } from './log-out/log-out.component';
+import { NavVarComponent } from './nav-var/nav-var.component';
 
 
 
@@ -36,6 +37,7 @@ import { LogOutComponent } from './log-out/log-out.component';
     LoadingComponent,
     SobreMiComponent,
     LogOutComponent,
+    NavVarComponent,
     ],
   imports: [
     BrowserModule,
