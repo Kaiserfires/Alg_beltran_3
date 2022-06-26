@@ -9,6 +9,8 @@ import { ListadoComponent } from './vista/listado/listado.component';
 import { AccesoGuard } from './seguridad/acceso.guard';
 import { AhorcadoCompComponent } from './componenetes/ahorcado-comp/ahorcado-comp.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { BoardComponent } from './componenetes/board/board.component';
+import { SquareComponent } from './square/square.component';
 //import { DibujaAhorcadoComponent } from './dibuja-ahorcado/dibuja-ahorcado.component';
 
 const routes: Routes = [
@@ -20,7 +22,8 @@ const routes: Routes = [
   {path:'adivinarnumero',component:AdivinarNumeroComponent,canActivate:[AccesoGuard]},
   {path:'listado',component:ListadoComponent,canActivate:[AccesoGuard]},
   {path:'Ahorcado',component:AhorcadoCompComponent,canActivate:[AccesoGuard]},
-  //{path:'Ahorcado',component:AhorcadoComponent},
+  {path:'tablero',component:BoardComponent,canActivate:[AccesoGuard]},
+  {path:'cuadrados',component:SquareComponent,canActivate:[AccesoGuard]},
   {path:'**',component:BienvenidaComponent}, //esto sirve para volver a una pagina con los doble **
 ];
 

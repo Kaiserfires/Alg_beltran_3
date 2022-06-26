@@ -16,7 +16,7 @@ export class LogOutComponent implements OnInit {
   }
 
   logingout(){
-     this.UserFlag.logout();
+    this.UserFlag.logout();
   }
 }
 

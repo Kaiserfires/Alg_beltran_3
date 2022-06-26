@@ -18,6 +18,10 @@ import { LoadingComponent } from './loading/loading.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { NavVarComponent } from './nav-var/nav-var.component';
+import { SquareComponent } from './square/square.component';
+import { BoardComponent } from './componenetes/board/board.component';
+
+
 
 
 
@@ -38,7 +42,9 @@ import { NavVarComponent } from './nav-var/nav-var.component';
     SobreMiComponent,
     LogOutComponent,
     NavVarComponent,
-    ],
+    SquareComponent,
+    BoardComponent,
+],
   imports: [
     BrowserModule,
     AppRoutingModule,
