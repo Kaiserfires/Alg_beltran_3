@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-square',
@@ -10,8 +10,8 @@ import { Component, Input } from '@angular/core';
 export class SquareComponent   {
 
   @Input()
-  value!: "X" | "O";
+  value: "X" | "O" |""="";
 
-  
 
-}
+  }
+

@@ -7,10 +7,12 @@ import { Usarios } from '../entidades/usarios';
 export class UserFlagService {
   public MyUserFlag:Usarios;
   public logueado:boolean = true;
+  
 
   constructor() {
     this.MyUserFlag = new Usarios();
     this.logueado=false;
+    this.usuarioEnLinea();
    }
    
   login(MyUserFlag:Usarios){
@@ -25,4 +27,15 @@ logout(){
   this.MyUserFlag = new Usarios();
   localStorage.setItem('usuarioLogueado','');
 }
+
+usuarioEnLinea(){
+  var A=localStorage.getItem('usuarioLogueado');
+  
+if(A && A!=""){
+  this.MyUserFlag=JSON.parse(A);
+  this.logueado=true;
+}
+}
+
+
 }
