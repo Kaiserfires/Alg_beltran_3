@@ -19,7 +19,7 @@ export class AccesoGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
   
     if( !this.UserFlag.logueado){  //agregar un metodo booleano  que cheuee el local storage  true le tiene que dar acceso y el false tiene que redirigir
-      this.router.navigate(['/login']);
+      this.router.navigate(['/login']);//EXAMEN AGREGAR IF PARA HABILITAR JUEGO PREMIUN
       
       
     }

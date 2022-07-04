@@ -11,6 +11,7 @@ import { AhorcadoCompComponent } from './componenetes/ahorcado-comp/ahorcado-com
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { BoardComponent } from './componenetes/board/board.component';
 import { SquareComponent } from './square/square.component';
+import { LogOutComponent } from './log-out/log-out.component';
 //import { DibujaAhorcadoComponent } from './dibuja-ahorcado/dibuja-ahorcado.component';
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'Ahorcado',component:AhorcadoCompComponent,canActivate:[AccesoGuard]},
   {path:'tablero',component:BoardComponent,canActivate:[AccesoGuard]},
   {path:'cuadrados',component:SquareComponent,canActivate:[AccesoGuard]},
+  {path:'LogOut',component:LogOutComponent},
   {path:'**',component:BienvenidaComponent}, //esto sirve para volver a una pagina con los doble **
 ];
 

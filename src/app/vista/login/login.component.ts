@@ -12,6 +12,7 @@ import { UserFlagService } from 'src/app/servicio/user-flag.service';
 export class LoginComponent implements OnInit {
   nombre:string="escriba aqui";
   contrasenia:string="";
+  //premiun:boolean=false;
   //MyUsuario:Usarios;
   public formu:FormGroup;
 
@@ -39,11 +40,15 @@ export class LoginComponent implements OnInit {
   loguear2(){
     //this.UserFlag.MyUserFlag=this.formu.getRawValue();
     let usuario:Usarios=this.formu.getRawValue();
-    let ListUsuarioSerial:string=localStorage.getItem('usuario')??'[]';
+    let ListUsuarioSerial/*:string*/=localStorage.getItem('usuario')??'[]';
     let ListUsuario:Array<Usarios>=JSON.parse(ListUsuarioSerial);
+    //this.premiun=localStorage.getItem('usuario')??'[premiun]';
+    //if(!localStorage.getItem("premiun")){this.UserFlag.MyUserFlag.premiun=localStorage.getItem('usuario')??'[]'.f}
     if(ListUsuario.find((us)=>usuario.usuario ==us.usuario && us.contrasenia == usuario.contrasenia)){
+      
       this.UserFlag.login(usuario);  
       this.route.navigateByUrl("/bienvenida");
+      
         
       }
 

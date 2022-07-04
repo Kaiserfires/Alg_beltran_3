@@ -29,8 +29,15 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="adivinarnumero">adivinar el numero</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="Ahorcado">Ahorcado</a>
+          <li *ngIf="visible" class="nav-item">
+            <a  class="nav-link" routerLink="Ahorcado">Ahorcado</a>
+          </li>
+          <li *ngIf="visiblePremiun" class="nav-item">
+            <a  class="nav-link" routerLink="Ahorcado" >ES PREMIUN</a>
+          </li>
+          <li  class="nav-item">
+            <button (click)="btnLogout()">Logout</button>
+            
           </li>
         </ul>
         <form class="d-flex" role="search">

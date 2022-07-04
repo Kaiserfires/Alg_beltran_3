@@ -6,7 +6,7 @@
 <!-- <input type="button" (click)="loguear()" value="envia los valores" > -->
 <p *ngIf="formu.controls['usuario'].errors?formu.controls['usuario'].errors['required'] :false && formu.controls['usuario'].touched">escriba</p>
 <p *ngIf="formu.controls['contrasenia'].errors && formu.controls['contrasenia'].touched && formu.controls['contrasenia'].errors['minLength']">error de codigo</p>
-
+<p>
 <button type="submit" [disabled]="formu.invalid"  >login</button>
 </form>
 <!--<form {ngSubmit}="aceptar()">

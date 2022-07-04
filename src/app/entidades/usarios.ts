@@ -3,5 +3,6 @@ export class Usarios {
     public apellido="";
     public usuario="";
     public contrasenia="";
+    public premiun:boolean=false;
 }
 

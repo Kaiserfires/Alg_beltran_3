@@ -29,4 +29,5 @@ export class RegistrarComponent implements OnInit {
     localStorage.setItem('usuario',JSON.stringify(ListUsuario))
     this.ruteo.navigateByUrl('login');
   }
+ 
 }
