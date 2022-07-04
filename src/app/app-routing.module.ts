@@ -12,6 +12,8 @@ import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { BoardComponent } from './componenetes/board/board.component';
 import { SquareComponent } from './square/square.component';
 import { LogOutComponent } from './log-out/log-out.component';
+import { GameButtonComponent } from './simon-game/game-button/game-button.component';
+import { SimonGameComponent } from './simon-game/simon-game.component';
 //import { DibujaAhorcadoComponent } from './dibuja-ahorcado/dibuja-ahorcado.component';
 
 const routes: Routes = [
@@ -26,6 +28,8 @@ const routes: Routes = [
   {path:'tablero',component:BoardComponent,canActivate:[AccesoGuard]},
   {path:'cuadrados',component:SquareComponent,canActivate:[AccesoGuard]},
   {path:'LogOut',component:LogOutComponent},
+  {path:'simon-button',component:GameButtonComponent},
+  {path:'simon-game',component:SimonGameComponent},
   {path:'**',component:BienvenidaComponent}, //esto sirve para volver a una pagina con los doble **
 ];
 

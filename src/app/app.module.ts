@@ -20,6 +20,9 @@ import { LogOutComponent } from './log-out/log-out.component';
 import { NavVarComponent } from './nav-var/nav-var.component';
 import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './componenetes/board/board.component';
+import { SimonGameComponent } from './simon-game/simon-game.component';
+import { GameButtonComponent } from './simon-game/game-button/game-button.component';
+
 
 
 
@@ -44,6 +47,8 @@ import { BoardComponent } from './componenetes/board/board.component';
     NavVarComponent,
     SquareComponent,
     BoardComponent,
+    SimonGameComponent,
+    GameButtonComponent,
 ],
   imports: [
     BrowserModule,

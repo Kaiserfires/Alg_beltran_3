@@ -8,7 +8,7 @@ import { Usarios } from '../entidades/usarios';
 export class UserFlagService {
   public MyUserFlag:Usarios;
   public logueado:boolean = false;
-  public premiunFlag:boolean = false;
+  public premiunFlag:boolean;
   public posicion:number | undefined;
   public colectorUsers: Array<Usarios> = [];
   public name:any=null;
@@ -30,8 +30,8 @@ export class UserFlagService {
     this.logueado=true;
     this.MyUserFlag=MyUserFlag;
     localStorage.setItem('usuarioLogueado',JSON.stringify(MyUserFlag));// aca llega el usuario 
-    this.premiunFlag=false;
     this.premiunCheck();
+    
     
     
   }
@@ -69,9 +69,9 @@ premiunCheck() {
   if(posicion){
     var B:boolean = posicion.premiun;
     if(!B){
-      this.premiunFlag = false;
+       this.premiunFlag = false;
     }else{
-      this.premiunFlag = true;
+       this.premiunFlag = true;
     }
   }
 }
